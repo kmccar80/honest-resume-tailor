@@ -1,4 +1,4 @@
-const assistantUrl = process.env.NEXT_PUBLIC_ASSISTANT_URL || process.env.NEXT_PUBLIC_GPT_URL || "https://chatgpt.com/plugins/plugins_6b03af44c17c81918e8a7b89d1e46887";
+const assistantUrl = process.env.NEXT_PUBLIC_ASSISTANT_URL || "https://chatgpt.com/plugins/plugins_6b03af44c17c81918e8a7b89d1e46887";
 const ready = /^https:\/\/chatgpt\.com\/(?:g|plugins)\/[a-zA-Z0-9_-]+\/?$/.test(assistantUrl);
 
 export default function Home() {
