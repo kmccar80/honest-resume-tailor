@@ -11,6 +11,7 @@ export default function Home() {
         <p className="lead">Match your real experience to a job posting, uncover skill gaps, and prepare for interviews—with a confirmation step before any new claim goes into your resume.</p>
         {ready ? <a className="primary" href={assistantUrl} target="_blank" rel="noopener noreferrer">Launch resume assistant ↗</a> : <div className="notready" role="status">Assistant link is not configured.</div>}
         <p className="fine">Opens ChatGPT in a new tab. The plugin is currently private and cannot be used by the public until approved and published. ChatGPT account and usage limits apply.</p>
+        <p className="fine"><a href="https://chatgpt.com/plugins/plugin_asdk_app_6b03c8ccda308191b3b7d1460eb66da6" target="_blank" rel="noopener noreferrer">Open Resume Evidence Checker in ChatGPT ↗</a> · Private preview</p>
       </section>
       <section id="how" className="section">
         <h2>How it works</h2>
