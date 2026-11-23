@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       <section className="section two"><div><h2>Built for honest applications.</h2><p>The assistant is instructed not to invent skills, credentials, employment, metrics, or accomplishments. You remain responsible for checking the final wording and accuracy.</p></div><div className="panel"><h3>What you’ll get</h3><ul><li>Job requirement and evidence mapping</li><li>Resume bullet suggestions</li><li>Skill-gap analysis</li><li>Interview questions and preparation</li><li>Explicit approval checkpoints</li></ul></div></section>
       <section className="section privacy"><h2>Privacy by design</h2><p>This website does not accept, transmit, or store your resume. The assistant opens separately in ChatGPT, where you choose what to upload. OpenAI’s account settings, file limits, and data-handling policies apply. Review <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI’s Privacy Policy ↗</a> before submitting sensitive information.</p><p>Do not upload Social Security numbers, financial account details, passwords, or other unnecessary sensitive data. This tool is guidance, not a guarantee of hiring or error-free output.</p></section>
-      <footer><span>Honest Resume Tailor</span><span>Independent project · Not affiliated with OpenAI or Handshake</span></footer>
+      <footer><span>Honest Resume Tailor</span><span><a href="/honest-resume-tailor/support/">Support</a> · <a href="/honest-resume-tailor/privacy/">Privacy</a> · <a href="/honest-resume-tailor/terms/">Terms</a></span><span>Independent project · Not affiliated with OpenAI or Handshake</span></footer>
     </main>
   );
 }
