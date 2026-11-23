@@ -1,5 +1,5 @@
-const gptUrl = process.env.NEXT_PUBLIC_GPT_URL || "";
-const ready = /^https:\/\/chatgpt\.com\/g\/[^\s/]+/.test(gptUrl);
+const assistantUrl = process.env.NEXT_PUBLIC_ASSISTANT_URL || process.env.NEXT_PUBLIC_GPT_URL || "https://chatgpt.com/plugins/plugins_6b03af44c17c81918e8a7b89d1e46887";
+const ready = /^https:\/\/chatgpt\.com\/(?:g|plugins)\/[a-zA-Z0-9_-]+\/?$/.test(assistantUrl);
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
         <div className="eyebrow">AI-assisted career preparation · Human-verified claims</div>
         <h1>Make your experience stand out.<br/><em>Never make it up.</em></h1>
         <p className="lead">Match your real experience to a job posting, uncover skill gaps, and prepare for interviews—with a confirmation step before any new claim goes into your resume.</p>
-        {ready ? <a className="primary" href={gptUrl} target="_blank" rel="noopener noreferrer">Launch resume assistant ↗</a> : <div className="notready" role="status">Assistant link coming soon. The site is ready; the owner still needs to publish and connect the Custom GPT.</div>}
-        <p className="fine">Opens ChatGPT in a new tab. A ChatGPT account is required; plan and file-upload limits may apply.</p>
+        {ready ? <a className="primary" href={assistantUrl} target="_blank" rel="noopener noreferrer">Launch resume assistant ↗</a> : <div className="notready" role="status">Assistant link is not configured.</div>}
+        <p className="fine">Opens ChatGPT in a new tab. The plugin is currently private and cannot be used by the public until approved and published. ChatGPT account and usage limits apply.</p>
       </section>
       <section id="how" className="section">
         <h2>How it works</h2>
