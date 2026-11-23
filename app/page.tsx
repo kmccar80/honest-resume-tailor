@@ -44,7 +44,7 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-500">
-            Analysis results will appear here.
+            Analysis results will appear here .
           </p>
         </div>
       </div>
